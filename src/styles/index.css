@@ -1,0 +1,45 @@
+/* src/styles/global.css */
+
+/* Tailwind'in global direktifleri */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Swiper Pagination */
+.custom-pagination .swiper-pagination-bullet {
+    @apply bg-black;
+    /* Noktalar için siyah arkaplan */
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    @apply bg-black;
+    /* Aktif nokta da siyah */
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    /* Okları siyah yapar */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: gray;
+    /* Üzerine gelindiğinde gri olur */
+}
+
+.swiper-slide-active {
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Yumuşak geçiş */
+}
+
+.swiper-slide-active:hover {
+    transform: scale(1.1);
+    /* Aktif slayt %110 büyüyecek */
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Yumuşak büyüme */
+}
+
+.card-slide {
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Diğer slaytlara da geçiş efekti */
+}

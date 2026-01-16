@@ -1,0 +1,16 @@
+/* slider.css */
+.swiper-slide-active {
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Yumuşak geçiş */
+}
+
+.swiper-slide-active:hover {
+    transform: scale(1.1);
+    /* Aktif slayt %110 büyüyecek */
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Yumuşak büyüme */
+}
+
+.card-slide {
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Diğer slaytlara da geçiş efekti */}
